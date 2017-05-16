@@ -9,12 +9,13 @@
   </author>
   <content src="index.html" />
   <config-file platform="android" parent="/manifest" mode="merge">
+    <application android:theme="@android:style/Theme.Translucent"></application>
     <!--<application android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"></application>-->
-    <application android:theme="@android:style/Theme.NoDisplay"></application>
+    <!--<application android:theme="@android:style/Theme.NoDisplay"></application>-->
   </config-file>
   <preference name="DisallowOverscroll" value="true" />
   <preference name="android-minSdkVersion" value="14" />
-  <preference name="Fullscreen" value="true" />
+  <!--<preference name="Fullscreen" value="true" />-->
   
   <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1" />
   <plugin name="cordova-plugin-camera" source="npm" spec="~2.1.1" />
