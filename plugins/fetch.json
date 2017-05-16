@@ -166,5 +166,13 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "cordova-plugin-translucent-statusbar": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-translucent-statusbar@~1.1.1"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

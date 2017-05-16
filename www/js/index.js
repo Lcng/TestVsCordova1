@@ -35,7 +35,9 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
 
-        StatusBar.show();
+        if (window.StatusBar && window.StatusBar.show) {
+            window.StatusBar.show();
+        }
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {

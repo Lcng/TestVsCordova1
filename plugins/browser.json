@@ -63,6 +63,9 @@
         },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.lcng.testphonegap1"
+        },
+        "cordova-plugin-translucent-statusbar": {
+            "PACKAGE_NAME": "com.lcng.testphonegap1"
         }
     },
     "dependent_plugins": {
