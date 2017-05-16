@@ -44,7 +44,7 @@
   <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2" />
   <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0" />
   <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
-  <!--<plugin name="cordova-plugin-translucent-statusbar" source="npm" spec="~1.1.1"></plugin>-->
+  <plugin name="cordova-plugin-translucent-statusbar" source="npm" spec="~1.1.1"></plugin>
   <platform name="android">
     <!--<preference name="SplashScreen" value="www/res/screen/android/drawable-port-xhdpi-screen.png" />
     <splash src="www/res/screen/android/drawable-port-xhdpi-screen.png"/>-->
