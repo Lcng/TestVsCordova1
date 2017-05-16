@@ -9,7 +9,8 @@
   </author>
   <content src="index.html" />
   <config-file platform="android" parent="/manifest" mode="merge">
-    <application android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"></application>
+    <!--<application android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"></application>-->
+    <application android:theme="@android:style/Theme.NoDisplay"></application>
   </config-file>
   <preference name="DisallowOverscroll" value="true" />
   <preference name="android-minSdkVersion" value="14" />
