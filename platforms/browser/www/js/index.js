@@ -20,7 +20,6 @@ var app = {
     // Application Constructor
     initialize: function () {
         this.bindEvents();
-        app.showStatusBar();
     },
     // Bind Event Listeners
     //
@@ -35,7 +34,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function () {
         app.receivedEvent('deviceready');
-        // app.showStatusBar();
+        app.showStatusBar();
     },
     // Update DOM on a Received Event
     receivedEvent: function (id) {
