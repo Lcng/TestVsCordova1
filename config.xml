@@ -9,6 +9,7 @@
   </author>
   <!--<content src="index.html" />-->
   <content src="http://www.baidu.com" />
+  <access origin="baidu.com" subdomains="true"/>
   <config-file platform="android" parent="/manifest" mode="merge">
     <!--<application android:theme="@android:style/Theme.Translucent.NoTitleBar"></application>-->
     <application android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"></application>
