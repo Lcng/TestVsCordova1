@@ -50,10 +50,10 @@ var app = {
     showStatusBar: function () {
         var p = document.getElementById('p3');
 
-        AndroidFullScreen.showUnderSystemUI(function () {
-            p.innerText = 1;
-        }, function () {
-            p.innerText = 2;
-        });
+        //AndroidFullScreen.showUnderSystemUI(function () {
+        //    p.innerText = 1;
+        //}, function () {
+        //    p.innerText = 2;
+        //});
     }
 };
