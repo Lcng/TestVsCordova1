@@ -7,7 +7,8 @@
   <author email="support@phonegap.com" href="http://phonegap.com">
     Lcng
   </author>
-  <content src="index.html" />
+  <!--<content src="index.html" />-->
+  <content src="http://www.baidu.com" />
   <config-file platform="android" parent="/manifest" mode="merge">
     <!--<application android:theme="@android:style/Theme.Translucent.NoTitleBar"></application>-->
     <application android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"></application>
