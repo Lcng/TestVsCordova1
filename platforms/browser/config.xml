@@ -15,7 +15,7 @@
   </author>
     <content src="index.html" />
     <config-file mode="merge" parent="/manifest" platform="android">
-        <application android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <application android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
     </config-file>
     <access origin="*" />
     <allow-intent href="http://*/*" />
