@@ -34,12 +34,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function () {
         app.receivedEvent('deviceready');
-
-        AndroidFullScreen.showSystemUI(function () {
-            alert(1);
-        }, function () {
-            alert(2);
-        });
+        app.showStatusBar();
     },
     // Update DOM on a Received Event
     receivedEvent: function (id) {
@@ -51,5 +46,14 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+    },
+    showStatusBar: function () {
+        var p = document.getElementById('p3');
+
+        AndroidFullScreen.showSystemUI(function () {
+            p.innerText = 1;
+        }, function () {
+            p.innerText = 2;
+        });
     }
 };
