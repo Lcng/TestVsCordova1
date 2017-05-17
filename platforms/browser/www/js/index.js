@@ -55,5 +55,11 @@ var app = {
         //}, function () {
         //    p.innerText = 2;
         //});
+
+        AndroidFullScreen.showSystemUI(function () {
+            p.innerText = 1;
+        }, function () {
+            p.innerText = 2;
+        });
     }
 };
