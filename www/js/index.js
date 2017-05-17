@@ -35,7 +35,7 @@ var app = {
     onDeviceReady: function () {
         app.receivedEvent('deviceready');
 
-        AndroidFullScreen.showUnderStatusBar(function () {
+        AndroidFullScreen.showSystemUI(function () {
             alert(1);
         }, function () {
             alert(2);
