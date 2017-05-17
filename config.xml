@@ -8,7 +8,7 @@
     Lcng
   </author>
   <!--<content src="index.html" />-->
-  <!--<content src="https://m.baidu.com" />-->
+  <content src="https://m.baidu.com" />
   <access origin="https://m.baidu.com" subdomains="true"/>
   <config-file platform="android" parent="/manifest" mode="merge">
     <!--<application android:theme="@android:style/Theme.Translucent.NoTitleBar"></application>-->
