@@ -57,10 +57,10 @@ var app = {
         //    p.innerText = 2;
         //});
 
-        AndroidFullScreen.showUnderStatusBar(function () {
-            p.innerText = 1;
+        AndroidFullScreen.showSystemUI(function () {
+            p.innerText = 3;
         }, function () {
-            p.innerText = 2;
+            p.innerText = 4;
         });
 
         //AndroidFullScreen.showSystemUI(function () {
