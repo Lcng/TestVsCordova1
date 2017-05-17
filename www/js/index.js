@@ -27,9 +27,6 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function () {
         document.addEventListener('deviceready', this.onDeviceReady, false);
-        document.addEventListener('load', function () {
-            window.location.href = 'http://www.baidu.com';
-        }, false);
     },
     // deviceready Event Handler
     //
