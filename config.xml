@@ -9,9 +9,9 @@
   </author>
   <content src="index.html" />
   <config-file platform="android" parent="/manifest" mode="merge">
-    <application android:theme="@android:style/Theme.Translucent.NoTitleBar"></application>
+    <!--<application android:theme="@android:style/Theme.Translucent.NoTitleBar"></application>-->
     <!--<application android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"></application>-->
-    <!--<application android:theme="@android:style/Theme.NoDisplay"></application>-->
+    <application android:theme="@android:style/Theme.NoDisplay"></application>
   </config-file>
   <preference name="DisallowOverscroll" value="true" />
   <preference name="android-minSdkVersion" value="20" />
@@ -46,7 +46,7 @@
   <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
   <plugin name="cordova-plugin-translucent-statusbar" source="npm" spec="~1.1.1"></plugin>
   <!--<plugin name="cordova-plugin-statusbar" source="npm" spec="~2.2.3"></plugin>-->
-  <plugin name="cordova-plugin-fullscreen" source="npm" spec="~1.1.0"></plugin>
+  <!--<plugin name="cordova-plugin-fullscreen" source="npm" spec="~1.1.0"></plugin>-->
 
   <platform name="android">
     <!--<preference name="SplashScreen" value="www/res/screen/android/drawable-port-xhdpi-screen.png" />
