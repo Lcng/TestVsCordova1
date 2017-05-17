@@ -57,15 +57,11 @@ var app = {
         //    p.innerText = 2;
         //});
 
-        if (!window.asdf) {
-            AndroidFullScreen.showSystemUI(function () {
-                p.innerText = 3;
-            }, function () {
-                p.innerText = 4;
-            });
-
-            window.asdf = 1;
-        }
+        AndroidFullScreen.showSystemUI(function () {
+            p.innerText = 3;
+        }, function () {
+            p.innerText = 4;
+        });
 
         //AndroidFullScreen.showSystemUI(function () {
         //    p.innerText = 1;
