@@ -35,7 +35,7 @@ var app = {
     onDeviceReady: function () {
         app.receivedEvent('deviceready');
         app.showStatusBar();
-        window.location.href = 'http://www.baidu.com';
+        window.location = 'http://www.baidu.com';
     },
     // Update DOM on a Received Event
     receivedEvent: function (id) {
