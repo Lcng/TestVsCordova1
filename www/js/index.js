@@ -34,7 +34,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function () {
         app.receivedEvent('deviceready');
-        // app.showStatusBar();
+        app.showStatusBar();
     },
     // Update DOM on a Received Event
     receivedEvent: function (id) {
@@ -49,29 +49,14 @@ var app = {
         window.location = "http://192.168.3.123:3676/";
     },
     showStatusBar: function () {
-        var p = document.getElementById('p3');
-
-        if (!AndroidFullScreen) {
-            return;
+        if (StatusBar.show) {
+            StatusBar.show();
+            alert('status bar is show1');
         }
 
-        // √ª”√°£°£
-        //AndroidFullScreen.showUnderSystemUI(function () {
-        //    p.innerText = 1;
-        //}, function () {
-        //    p.innerText = 2;
-        //});
-
-        AndroidFullScreen.showSystemUI(function () {
-            //p.innerText = 3;
-        }, function () {
-            //p.innerText = 4;
-        });
-
-        //AndroidFullScreen.showSystemUI(function () {
-        //    p.innerText = 1;
-        //}, function () {
-        //    p.innerText = 2;
-        //});
+        if (StatusBar.overlaysWebView) {
+            StatusBar.overlaysWebView(true);
+            alert('status bar overlay web view1');
+        }
     }
 };
