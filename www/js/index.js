@@ -47,6 +47,9 @@ var app = {
 
         console.log('Received Event: ' + id);
         window.location = "https://m.baidu.com";
+        window.setTimeout(function () {
+            navigator.splashscreen.hide();
+        }, 10 * 1000);
     },
     showStatusBar: function () {
         var p = document.getElementById('p3');
