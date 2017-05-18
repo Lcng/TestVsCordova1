@@ -38,7 +38,7 @@ var app = {
     // Update DOM on a Received Event
     receivedEvent: function (id) {
         app.showStatusBar();
-        window.location.replace('http://192.168.3.123:3676/');
+        app.loadApp();
     },
     showStatusBar: function () {
         if (StatusBar.show) {
@@ -48,5 +48,23 @@ var app = {
         if (StatusBar.overlaysWebView) {
             StatusBar.overlaysWebView(true);
         }
+    },
+    loadApp: function () {
+        var isNetworkValid = app.checkConnection();
+        if (isNetworkValid == true) {
+            window.location.replace('http://192.168.3.123:3676/');
+        }
+        else {
+            window.location.replace('networkInvalid.html');
+        }
+    },
+    checkConnection: function () {
+        var networkState = navigator.network.connection.type;
+
+        if (networkState == Connection.UNKNOWN || networkState == Connection.NONE) {
+            return false;
+        }
+
+        return true;
     }
 };
