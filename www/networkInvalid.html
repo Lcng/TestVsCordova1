@@ -8,10 +8,10 @@
     <script>
         // DOMContentLoaded: 当前文档（不包含当前文档依赖的样式、脚本、图片和其它媒体资源）加载完成
         // load: 当前文档及其依赖的所有媒体资源都加载完成
-        document.addEventListener('load', onDeviceReady, false);
+        document.addEventListener('load', onLoad, false);
 
-        function onDOMContentLoaded() {
-            document.addEventListener('onDeviceReady', onDeviceReady, false);
+        function onLoad() {
+            document.addEventListener('deviceready', onDeviceReady, false);
         }
 
         function onDeviceReady() {
