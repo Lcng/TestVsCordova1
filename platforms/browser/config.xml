@@ -18,6 +18,7 @@
         <application android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
     </config-file>
     <allow-navigation href="*" />
+    <access origin="*" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="20" />
 </widget>
