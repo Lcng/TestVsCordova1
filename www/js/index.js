@@ -46,10 +46,7 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-        //window.location = "https://m.baidu.com";
-        window.setTimeout(function () {
-            navigator.splashscreen.hide();
-        }, 10 * 1000);
+        window.location = "http://115.152.251.201:3676/";
     },
     showStatusBar: function () {
         var p = document.getElementById('p3');
