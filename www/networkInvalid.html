@@ -6,8 +6,26 @@
     <title>网络连接异常</title>
     <script>
         function initialize() {
-            navigator.splashscreen.hide();
+            alert('initializing..');
+
+            if (navigator && navigator.splashscreen && navigator.splashscreen.hide) {
+                navigator.splashscreen.hide();
+                alert('hide splash screen');
+            }
+            else {
+                alert('splashscreen is not accessable');
+            }
         }
+
+        //document.addEventListener('deviceready', function () {
+        //    if (navigator && navigator.splashscreen && navigator.splashscreen.hide) {
+        //        navigator.splashscreen.hide();
+        //    }
+        //    else {
+        //        alert('splashscreen is not accessable');
+        //    }
+
+        //}, false);
     </script>
 </head>
 <body onload="initialize();">
