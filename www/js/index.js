@@ -46,7 +46,7 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-        window.location = "https://m.baidu.com";
+        //window.location = "https://m.baidu.com";
         window.setTimeout(function () {
             navigator.splashscreen.hide();
         }, 10 * 1000);
