@@ -17,7 +17,7 @@
     <!--没有主题，应用程序无法显示-->
   </config-file>
   <preference name="DisallowOverscroll" value="true" />
-  <preference name="android-minSdkVersion" value="20" />
+  <preference name="android-minSdkVersion" value="21" />
   <!--<preference name="Fullscreen" value="true" />-->
   <!--启动时非全屏，启动后是全屏-->
 
