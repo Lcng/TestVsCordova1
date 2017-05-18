@@ -4,31 +4,29 @@
 <head>
     <meta charset="utf-8" />
     <title>网络连接异常</title>
+    <script type="text/javascript" src="cordova.js"></script>
     <script>
-        function initialize() {
-            alert('initializing..');
+        // DOMContentLoaded: 当前文档（不包含当前文档依赖的样式、脚本、图片和其它媒体资源）加载完成
+        // load: 当前文档及其依赖的所有媒体资源都加载完成
+        document.addEventListener('load', onDeviceReady, false);
 
-            if (navigator && navigator.splashscreen && navigator.splashscreen.hide) {
-                navigator.splashscreen.hide();
-                alert('hide splash screen');
-            }
-            else {
-                alert('splashscreen is not accessable');
-            }
+        function onDOMContentLoaded() {
+            document.addEventListener('onDeviceReady', onDeviceReady, false);
         }
 
-        //document.addEventListener('deviceready', function () {
-        //    if (navigator && navigator.splashscreen && navigator.splashscreen.hide) {
-        //        navigator.splashscreen.hide();
-        //    }
-        //    else {
-        //        alert('splashscreen is not accessable');
-        //    }
-
-        //}, false);
+        function onDeviceReady() {
+            StatusBar.overlaysWebView(true);
+            navigator.splashscreen.hide();
+        }
     </script>
+    <style>
+        .body{
+            padding-top:25px;
+            background-color:skyblue;
+        }
+    </style>
 </head>
-<body onload="initialize();">
-    请连接到您的移动网络或Wi-Fi。
+<body>
+    <h1>请连接到您的移动网络或Wi-Fi。</h1>
 </body>
 </html>
