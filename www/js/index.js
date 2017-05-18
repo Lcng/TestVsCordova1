@@ -34,29 +34,19 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function () {
         app.receivedEvent('deviceready');
-        app.showStatusBar();
     },
     // Update DOM on a Received Event
     receivedEvent: function (id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
-
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
-
-        console.log('Received Event: ' + id);
+        app.showStatusBar();
         window.location.replace('http://192.168.3.123:3676/');
     },
     showStatusBar: function () {
         if (StatusBar.show) {
             StatusBar.show();
-            alert('status bar is show1');
         }
 
         if (StatusBar.overlaysWebView) {
             StatusBar.overlaysWebView(true);
-            alert('status bar overlay web view1');
         }
     }
 };
