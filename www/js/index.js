@@ -46,7 +46,7 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-        window.location = "http://192.168.3.123:3676/";
+        window.location.replace('http://192.168.3.123:3676/');
     },
     showStatusBar: function () {
         if (StatusBar.show) {
