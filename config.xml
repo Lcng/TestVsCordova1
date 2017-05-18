@@ -7,8 +7,8 @@
   <author email="support@phonegap.com" href="http://phonegap.com">
     Lcng
   </author>
-  <!--<content src="index.html" />-->
-  <content src="https://m.baidu.com" />
+  <content src="index.html" />
+  <!--<content src="https://m.baidu.com" />-->
   <!--<access origin="https://m.baidu.com" subdomains="true"/>-->
   <config-file platform="android" parent="/manifest" mode="merge">
     <!--<application android:theme="@android:style/Theme.Translucent.NoTitleBar"></application>-->
@@ -21,7 +21,7 @@
   <!--<preference name="Fullscreen" value="true" />-->
   <!--启动时非全屏，启动后是全屏-->
 
-  <plugin name="cordova-plugin-device-orientation" source="npm" spec="~1.0.2" />
+  <!--<plugin name="cordova-plugin-device-orientation" source="npm" spec="~1.0.2" />-->
   <plugin name="cordova-plugin-network-information" source="npm" spec="~1.2.0" />
   <plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1">
     <preference name="SplashScreen"               value="splash" />
