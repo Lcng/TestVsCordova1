@@ -47,7 +47,7 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-        window.location = "http://www.domain.com";
+        window.location = "https://m.baidu.com";
     },
     showStatusBar: function () {
         var p = document.getElementById('p3');

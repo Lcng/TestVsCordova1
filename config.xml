@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version='1.0.1' encoding='utf-8'?>
 <widget id="com.lcng.testphonegap1" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android = "http://schemas.android.com/apk/res/android">
   <name>TestPhoneGap1</name>
   <description>
@@ -32,7 +32,10 @@
     <preference name="ShowSplashScreenSpinner"    value="false" />
   </plugin>
   <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2" />
-  <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
+  <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" >
+
+    <allow-navigation href="*" />
+  </plugin>
   <plugin name="cordova-plugin-fullscreen" source="npm" spec="~1.1.0"></plugin>
 
   <platform name="android">
@@ -66,13 +69,8 @@
 
 
 
-  <!--<access origin="*" />
-  <allow-intent href="http://*/*" />
-  <allow-intent href="https://*/*" />
-  <allow-intent href="tel:*" />
-  <allow-intent href="sms:*" />
-  <allow-intent href="mailto:*" />
-  <allow-intent href="geo:*" />-->
+
+  <allow-navigation href="*" />
   <platform name="android">
     <access origin="*" />
     <allow-navigation href="*" />
