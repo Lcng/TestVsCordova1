@@ -4,8 +4,13 @@
 <head>
     <meta charset="utf-8" />
     <title>网络连接异常</title>
+    <script>
+        function initialize() {
+            navigator.splashscreen.hide();
+        }
+    </script>
 </head>
-<body>
+<body onload="initialize();">
     请连接到您的移动网络或Wi-Fi。
 </body>
 </html>
