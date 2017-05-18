@@ -68,8 +68,9 @@
 
 
   <allow-navigation href="*" /><!--这只能放在platform之外-->
+  <access origin="*" />
   <platform name="android">
-    <access origin="*" />
+    <!--<access origin="*" />-->
   </platform>
 
 </widget>
