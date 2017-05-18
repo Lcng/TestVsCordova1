@@ -34,7 +34,7 @@
   <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2" />
   <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" >
 
-    <allow-navigation href="*" />
+    <!--<allow-navigation href="*" />-->
   </plugin>
   <plugin name="cordova-plugin-fullscreen" source="npm" spec="~1.1.0"></plugin>
 
@@ -73,7 +73,7 @@
   <allow-navigation href="*" />
   <platform name="android">
     <access origin="*" />
-    <allow-navigation href="*" />
+    <!--<allow-navigation href="*" />-->
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
