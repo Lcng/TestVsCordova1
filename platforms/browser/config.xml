@@ -13,17 +13,10 @@
     <author email="support@phonegap.com" href="http://phonegap.com">
     Lcng
   </author>
-    <access origin="https://m.baidu.com" subdomains="true" />
+    <content src="index.html" />
     <config-file mode="merge" parent="/manifest" platform="android">
         <application android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
     </config-file>
-    <access origin="*" />
-    <allow-intent href="http://*/*" />
-    <allow-intent href="https://*/*" />
-    <allow-intent href="tel:*" />
-    <allow-intent href="sms:*" />
-    <allow-intent href="mailto:*" />
-    <allow-intent href="geo:*" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="20" />
 </widget>

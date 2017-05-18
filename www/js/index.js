@@ -34,8 +34,8 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function () {
         app.receivedEvent('deviceready');
-        // app.showStatusBar();
-        //window.location = 'https://m.baidu.com';
+        app.showStatusBar();
+        window.location = 'https://m.baidu.com';
     },
     // Update DOM on a Received Event
     receivedEvent: function (id) {
@@ -63,9 +63,9 @@ var app = {
         //});
 
         AndroidFullScreen.showSystemUI(function () {
-            p.innerText = 3;
+            //p.innerText = 3;
         }, function () {
-            p.innerText = 4;
+            //p.innerText = 4;
         });
 
         //AndroidFullScreen.showSystemUI(function () {
